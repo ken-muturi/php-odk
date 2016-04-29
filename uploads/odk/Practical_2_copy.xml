@@ -1,0 +1,509 @@
+<?xml version="1.0"?>
+<h:html xmlns="http://www.w3.org/2002/xforms" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:h="http://www.w3.org/1999/xhtml" xmlns:jr="http://openrosa.org/javarosa" xmlns:orx="http://openrosa.org/xforms" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <h:head>
+    <h:title>acted third party monitoring</h:title>
+    <model>
+      <instance>
+        <Practical_2_copy id="Practical_2_copy">
+          <vif>
+            <introduction/>
+            <Date_survey/>
+            <HHD/>
+            <respondent/>
+            <ac/>
+            <noi/>
+            <vn/>
+            <dn/>
+            <rn/>
+            <geo/>
+          </vif>
+          <HHC>
+            <Gender/>
+            <age/>
+            <marital_status/>
+            <m/>
+            <f/>
+            <HHH_Gender/>
+            <male_less_5_years/>
+            <male_5_17_years/>
+            <male_18_49_years/>
+            <male_over_50_years/>
+            <female_less_5_years/>
+            <female_5_17_years/>
+            <female_18_49_years/>
+            <female_over_50_years/>
+          </HHC>
+          <HHV>
+            <generate_income/>
+            <total_income/>
+            <primary_livelihood/>
+            <primary_livelihood_other/>
+          </HHV>
+          <Targeting>
+            <generated_note_name_36/>
+            <Registration_selection/>
+            <Registration_selection_other/>
+            <targeting_informed/>
+            <targeting_fair/>
+            <if_no_why/>
+            <gave_favors/>
+            <describe/>
+            <taxation/>
+            <pay/>
+            <pay_other/>
+            <c5_2/>
+            <c6/>
+            <c61/>
+            <c62/>
+          </Targeting>
+          <meta>
+            <instanceID/>
+          </meta>
+        </Practical_2_copy>
+      </instance>
+      <bind nodeset="/Practical_2_copy/vif/introduction" required="true()" type="select1"/>
+      <bind nodeset="/Practical_2_copy/vif/Date_survey" type="date"/>
+      <bind nodeset="/Practical_2_copy/vif/HHD" required="true()" type="int"/>
+      <bind nodeset="/Practical_2_copy/vif/respondent" required="true()" type="string"/>
+      <bind nodeset="/Practical_2_copy/vif/ac" required="true()" type="select1"/>
+      <bind nodeset="/Practical_2_copy/vif/noi" required="true()" type="string"/>
+      <bind nodeset="/Practical_2_copy/vif/vn" required="true()" type="string"/>
+      <bind nodeset="/Practical_2_copy/vif/dn" required="true()" type="string"/>
+      <bind nodeset="/Practical_2_copy/vif/rn" required="true()" type="string"/>
+      <bind nodeset="/Practical_2_copy/vif/geo" required="true()" type="geopoint"/>
+      <bind nodeset="/Practical_2_copy/HHC/Gender" required="true()" type="select1"/>
+      <bind nodeset="/Practical_2_copy/HHC/age" required="true()" type="select1"/>
+      <bind nodeset="/Practical_2_copy/HHC/marital_status" required="true()" type="select1"/>
+      <bind nodeset="/Practical_2_copy/HHC/m" required="true()" type="int"/>
+      <bind nodeset="/Practical_2_copy/HHC/f" required="true()" type="int"/>
+      <bind nodeset="/Practical_2_copy/HHC/HHH_Gender" required="true()" type="select1"/>
+      <bind nodeset="/Practical_2_copy/HHC/male_less_5_years" type="int"/>
+      <bind nodeset="/Practical_2_copy/HHC/male_5_17_years" type="int"/>
+      <bind nodeset="/Practical_2_copy/HHC/male_18_49_years" type="int"/>
+      <bind nodeset="/Practical_2_copy/HHC/male_over_50_years" type="int"/>
+      <bind nodeset="/Practical_2_copy/HHC/female_less_5_years" type="int"/>
+      <bind nodeset="/Practical_2_copy/HHC/female_5_17_years" type="int"/>
+      <bind nodeset="/Practical_2_copy/HHC/female_18_49_years" type="int"/>
+      <bind nodeset="/Practical_2_copy/HHC/female_over_50_years" type="int"/>
+      <bind nodeset="/Practical_2_copy/HHV/generate_income" type="select1"/>
+      <bind nodeset="/Practical_2_copy/HHV/total_income" type="int"/>
+      <bind nodeset="/Practical_2_copy/HHV/primary_livelihood" type="select1"/>
+      <bind nodeset="/Practical_2_copy/HHV/primary_livelihood_other" relevant="selected(../primary_livelihood, 'other')" type="string"/>
+      <bind nodeset="/Practical_2_copy/Targeting/generated_note_name_36" readonly="true()" type="string"/>
+      <bind nodeset="/Practical_2_copy/Targeting/Registration_selection" type="select"/>
+      <bind nodeset="/Practical_2_copy/Targeting/Registration_selection_other" relevant="selected(../Registration_selection, 'other')" type="string"/>
+      <bind nodeset="/Practical_2_copy/Targeting/targeting_informed" required="true()" type="select1"/>
+      <bind nodeset="/Practical_2_copy/Targeting/targeting_fair" type="select1"/>
+      <bind nodeset="/Practical_2_copy/Targeting/if_no_why" type="string"/>
+      <bind nodeset="/Practical_2_copy/Targeting/gave_favors" type="select1"/>
+      <bind nodeset="/Practical_2_copy/Targeting/describe" type="string"/>
+      <bind nodeset="/Practical_2_copy/Targeting/taxation" type="select1"/>
+      <bind nodeset="/Practical_2_copy/Targeting/pay" type="select"/>
+      <bind nodeset="/Practical_2_copy/Targeting/pay_other" relevant="selected(../pay, 'other')" type="string"/>
+      <bind nodeset="/Practical_2_copy/Targeting/c5_2" type="int"/>
+      <bind nodeset="/Practical_2_copy/Targeting/c6" type="select1"/>
+      <bind nodeset="/Practical_2_copy/Targeting/c61" type="string"/>
+      <bind nodeset="/Practical_2_copy/Targeting/c62" type="string"/>
+      <bind calculate="concat('uuid:', uuid())" nodeset="/Practical_2_copy/meta/instanceID" readonly="true()" type="string"/>
+    </model>
+  </h:head>
+  <h:body>
+    <group ref="/Practical_2_copy/vif">
+      <label>Village Identifier Form</label>
+      <select1 ref="/Practical_2_copy/vif/introduction">
+        <label>is fine for me to ask you the following questions</label>
+        <item>
+          <label>no</label>
+          <value>1</value>
+        </item>
+        <item>
+          <label>yes</label>
+          <value>2</value>
+        </item>
+      </select1>
+      <input ref="/Practical_2_copy/vif/Date_survey">
+        <label>date of survey</label>
+      </input>
+      <input ref="/Practical_2_copy/vif/HHD">
+        <label>Household ID</label>
+        <hint>beneficiary card number</hint>
+      </input>
+      <input ref="/Practical_2_copy/vif/respondent">
+        <label>Respondent name</label>
+      </input>
+      <select1 ref="/Practical_2_copy/vif/ac">
+        <label>activity</label>
+        <hint>tick appropriatley</hint>
+        <item>
+          <label>cash for work</label>
+          <value>1</value>
+        </item>
+        <item>
+          <label>unconditional cash relief</label>
+          <value>2</value>
+        </item>
+      </select1>
+      <input ref="/Practical_2_copy/vif/noi">
+        <label>name of the interviewer</label>
+      </input>
+      <input ref="/Practical_2_copy/vif/vn">
+        <label>Village Name</label>
+      </input>
+      <input ref="/Practical_2_copy/vif/dn">
+        <label>District Name</label>
+      </input>
+      <input ref="/Practical_2_copy/vif/rn">
+        <label>Region Name</label>
+      </input>
+      <input ref="/Practical_2_copy/vif/geo">
+        <label>GPS Location</label>
+        <hint>collect GPS point within the next 20 meteres radius</hint>
+      </input>
+    </group>
+    <group ref="/Practical_2_copy/HHC">
+      <label>household characteristics</label>
+      <select1 ref="/Practical_2_copy/HHC/Gender">
+        <label>gender of the respondent</label>
+        <item>
+          <label>male</label>
+          <value>1</value>
+        </item>
+        <item>
+          <label>female</label>
+          <value>2</value>
+        </item>
+      </select1>
+      <select1 ref="/Practical_2_copy/HHC/age">
+        <label>age of the respondent</label>
+        <hint>tick appropriatly</hint>
+        <item>
+          <label>less than 18 yrs</label>
+          <value>1</value>
+        </item>
+        <item>
+          <label>18-25 yrs</label>
+          <value>2</value>
+        </item>
+        <item>
+          <label>26-35 yrs</label>
+          <value>3</value>
+        </item>
+        <item>
+          <label>36-45 yrs</label>
+          <value>4</value>
+        </item>
+        <item>
+          <label>above 45 yrs</label>
+          <value>5</value>
+        </item>
+      </select1>
+      <select1 ref="/Practical_2_copy/HHC/marital_status">
+        <label>marital status</label>
+        <item>
+          <label>married</label>
+          <value>1</value>
+        </item>
+        <item>
+          <label>widowed</label>
+          <value>2</value>
+        </item>
+        <item>
+          <label>divorced</label>
+          <value>3</value>
+        </item>
+        <item>
+          <label>single</label>
+          <value>4</value>
+        </item>
+      </select1>
+      <input ref="/Practical_2_copy/HHC/m">
+        <label>the number of male in the household</label>
+      </input>
+      <input ref="/Practical_2_copy/HHC/f">
+        <label>the number of female in the household</label>
+      </input>
+      <select1 ref="/Practical_2_copy/HHC/HHH_Gender">
+        <label>Gender of the household head</label>
+        <item>
+          <label>male</label>
+          <value>1</value>
+        </item>
+        <item>
+          <label>female</label>
+          <value>2</value>
+        </item>
+      </select1>
+      <input ref="/Practical_2_copy/HHC/male_less_5_years">
+        <label>how many male members of your household are less than 5 yrs of age?</label>
+      </input>
+      <input ref="/Practical_2_copy/HHC/male_5_17_years">
+        <label>how many male members of your household of 5 to 17 yrs of age?</label>
+      </input>
+      <input ref="/Practical_2_copy/HHC/male_18_49_years">
+        <label>how many male members of your household of 18 to 49 yrs of age?</label>
+      </input>
+      <input ref="/Practical_2_copy/HHC/male_over_50_years">
+        <label>how many male members of your household are over 50 yrs of age?</label>
+      </input>
+      <input ref="/Practical_2_copy/HHC/female_less_5_years">
+        <label>how many female members of your household are less than 5 yrs of age?</label>
+      </input>
+      <input ref="/Practical_2_copy/HHC/female_5_17_years">
+        <label>how many female members of your household of 5 to 17 yrs of age?</label>
+      </input>
+      <input ref="/Practical_2_copy/HHC/female_18_49_years">
+        <label>how many female members of your household of 18 to 49 yrs of age?</label>
+      </input>
+      <input ref="/Practical_2_copy/HHC/female_over_50_years">
+        <label>how many female members of your household are over 50 yrs of age?</label>
+      </input>
+    </group>
+    <group ref="/Practical_2_copy/HHV">
+      <label>household vulnerability</label>
+      <select1 ref="/Practical_2_copy/HHV/generate_income">
+        <label>how many members of your household generate income</label>
+        <hint>tick appropriatly</hint>
+        <item>
+          <label>None</label>
+          <value>1</value>
+        </item>
+        <item>
+          <label>One Member</label>
+          <value>2</value>
+        </item>
+        <item>
+          <label>Two members</label>
+          <value>3</value>
+        </item>
+        <item>
+          <label>Three Members</label>
+          <value>4</value>
+        </item>
+        <item>
+          <label>More than three members</label>
+          <value>5</value>
+        </item>
+      </select1>
+      <input ref="/Practical_2_copy/HHV/total_income">
+        <label>how much in total do your household members generate income before the project</label>
+        <hint>somali shilling per month please exclude income from the project</hint>
+      </input>
+      <select1 ref="/Practical_2_copy/HHV/primary_livelihood">
+        <label>what is current primary livelihood</label>
+        <hint>tick main source</hint>
+        <item>
+          <label>None</label>
+          <value>1</value>
+        </item>
+        <item>
+          <label>Agriculture (e.g sale of agri products)</label>
+          <value>2</value>
+        </item>
+        <item>
+          <label>Pastoralism (e.g sale of livestock)</label>
+          <value>3</value>
+        </item>
+        <item>
+          <label>Agropastoralism</label>
+          <value>4</value>
+        </item>
+        <item>
+          <label>Semi skilled labor (employment, casual)</label>
+          <value>5</value>
+        </item>
+        <item>
+          <label>petty trading</label>
+          <value>6</value>
+        </item>
+        <item>
+          <label>commercial trader</label>
+          <value>7</value>
+        </item>
+        <item>
+          <label>remmitances</label>
+          <value>8</value>
+        </item>
+        <item>
+          <label>sale of firewood/charcoal</label>
+          <value>9</value>
+        </item>
+        <item>
+          <label>fishing</label>
+          <value>10</value>
+        </item>
+        <item>
+          <label>salaries</label>
+          <value>11</value>
+        </item>
+        <item>
+          <label>others (specify)</label>
+          <value>12</value>
+        </item>
+        <item>
+          <label>Other</label>
+          <value>other</value>
+        </item>
+      </select1>
+      <input ref="/Practical_2_copy/HHV/primary_livelihood_other">
+        <label>Specify other.</label>
+      </input>
+    </group>
+    <group ref="/Practical_2_copy/Targeting">
+      <label>Targeting</label>
+      <input ref="/Practical_2_copy/Targeting/generated_note_name_36">
+        <label>to be answered by all benefeciaries</label>
+      </input>
+      <select ref="/Practical_2_copy/Targeting/Registration_selection">
+        <label>who selected and registered the participants of your activity</label>
+        <hint>mention the activity the respondent benefited from</hint>
+        <item>
+          <label>Head of my village</label>
+          <value>1</value>
+        </item>
+        <item>
+          <label>Project Committees</label>
+          <value>2</value>
+        </item>
+        <item>
+          <label>Community Assembly</label>
+          <value>3</value>
+        </item>
+        <item>
+          <label>Local Administration</label>
+          <value>4</value>
+        </item>
+        <item>
+          <label>NGO staff</label>
+          <value>5</value>
+        </item>
+        <item>
+          <label>Other (Specify)</label>
+          <value>6</value>
+        </item>
+        <item>
+          <label>Don’t know</label>
+          <value>7</value>
+        </item>
+        <item>
+          <label>Other</label>
+          <value>other</value>
+        </item>
+      </select>
+      <input ref="/Practical_2_copy/Targeting/Registration_selection_other">
+        <label>Specify other.</label>
+      </input>
+      <select1 ref="/Practical_2_copy/Targeting/targeting_informed">
+        <label>were you informed of the targeting process?</label>
+        <item>
+          <label>no</label>
+          <value>1</value>
+        </item>
+        <item>
+          <label>yes</label>
+          <value>2</value>
+        </item>
+      </select1>
+      <select1 ref="/Practical_2_copy/Targeting/targeting_fair">
+        <label>was the targeting process fair and transparent?</label>
+        <item>
+          <label>No</label>
+          <value>1</value>
+        </item>
+        <item>
+          <label>Yes</label>
+          <value>2</value>
+        </item>
+        <item>
+          <label>I don’t know</label>
+          <value>3</value>
+        </item>
+      </select1>
+      <input ref="/Practical_2_copy/Targeting/if_no_why">
+        <label>if no why</label>
+      </input>
+      <select1 ref="/Practical_2_copy/Targeting/gave_favors">
+        <label>do you know anyone who gave favors?</label>
+        <item>
+          <label>no</label>
+          <value>1</value>
+        </item>
+        <item>
+          <label>yes</label>
+          <value>2</value>
+        </item>
+      </select1>
+      <input ref="/Practical_2_copy/Targeting/describe">
+        <label>if yes describe</label>
+      </input>
+      <select1 ref="/Practical_2_copy/Targeting/taxation">
+        <label>do you pay any form of taxation?</label>
+        <item>
+          <label>no</label>
+          <value>1</value>
+        </item>
+        <item>
+          <label>yes</label>
+          <value>2</value>
+        </item>
+      </select1>
+      <select ref="/Practical_2_copy/Targeting/pay">
+        <label>whom to pay to?</label>
+        <item>
+          <label>Head of my village</label>
+          <value>1</value>
+        </item>
+        <item>
+          <label>Project Committees</label>
+          <value>2</value>
+        </item>
+        <item>
+          <label>Community Assembly</label>
+          <value>3</value>
+        </item>
+        <item>
+          <label>Local Administration</label>
+          <value>4</value>
+        </item>
+        <item>
+          <label>NGO staff</label>
+          <value>5</value>
+        </item>
+        <item>
+          <label>Other (Specify)</label>
+          <value>6</value>
+        </item>
+        <item>
+          <label>Don’t know</label>
+          <value>7</value>
+        </item>
+        <item>
+          <label>Other</label>
+          <value>other</value>
+        </item>
+      </select>
+      <input ref="/Practical_2_copy/Targeting/pay_other">
+        <label>Specify other.</label>
+      </input>
+      <input ref="/Practical_2_copy/Targeting/c5_2">
+        <label>how much did you pay per month?</label>
+      </input>
+      <select1 ref="/Practical_2_copy/Targeting/c6">
+        <label>did you receive any assistance?</label>
+        <item>
+          <label>no</label>
+          <value>1</value>
+        </item>
+        <item>
+          <label>yes</label>
+          <value>2</value>
+        </item>
+      </select1>
+      <input ref="/Practical_2_copy/Targeting/c61">
+        <label>if yes, mention type of assistance</label>
+      </input>
+      <input ref="/Practical_2_copy/Targeting/c62">
+        <label>from which donor</label>
+      </input>
+    </group>
+  </h:body>
+</h:html>

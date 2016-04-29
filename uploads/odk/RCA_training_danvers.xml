@@ -1,0 +1,1180 @@
+<?xml version="1.0"?>
+<h:html xmlns="http://www.w3.org/2002/xforms" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:h="http://www.w3.org/1999/xhtml" xmlns:jr="http://openrosa.org/javarosa" xmlns:orx="http://openrosa.org/xforms" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <h:head>
+    <h:title>RCA Training 20160217</h:title>
+    <model>
+      <itext>
+        <translation default="true()" lang="English">
+          <text id="/RCA_training_danvers/E0/noteFCS:hint">
+            <value>If nobody in the household consumed any of the foods in this food group at all in the last 7 days record as 0.</value>
+          </text>
+          <text id="/RCA_training_danvers/D/D4:label">
+            <value>In the past 30 days, how much money have you spent on Meat and Fish (Both red and white meat) for your family consumption</value>
+          </text>
+          <text id="/RCA_training_danvers/I/I16/1:label">
+            <value>Yes</value>
+          </text>
+          <text id="/RCA_training_danvers/D:label">
+            <value>D. CONSUMPTION AND EXPENDITURE</value>
+          </text>
+          <text id="/RCA_training_danvers/I/I15:label">
+            <value>5. Floods</value>
+          </text>
+          <text id="/RCA_training_danvers/EC/E4C/2:label">
+            <value>Work for food</value>
+          </text>
+          <text id="/RCA_training_danvers/H/H2B:label">
+            <value>How many of the past 7 days did you borrow food?</value>
+          </text>
+          <text id="/RCA_training_danvers/Demographics/C4_repeat/C11:label">
+            <value>C11. What is <output value=" /RCA_training_danvers/Demographics/C4_repeat/C4 "/> type of education?</value>
+          </text>
+          <text id="/RCA_training_danvers/EA/E4A:hint">
+            <value>(Maize Grain/Flour; Green Maize; Rice; Finger Millet ; Pearl Millet; Sorghum; Wheat Flour; Bread; Pasta; Other Cereal)</value>
+          </text>
+          <text id="/RCA_training_danvers/Demographics/C3/4:label">
+            <value>For security reasons</value>
+          </text>
+          <text id="/RCA_training_danvers/Demographics/C2/0:label">
+            <value>No</value>
+          </text>
+          <text id="/RCA_training_danvers/EB/E4B/5:label">
+            <value>Market/ shop purchase</value>
+          </text>
+          <text id="/RCA_training_danvers/Demographics/C3/5:label">
+            <value>To secure a house in site of displacement</value>
+          </text>
+          <text id="/RCA_training_danvers/I/I12:label">
+            <value>2. Food too expensive</value>
+          </text>
+          <text id="/RCA_training_danvers/I/I17:label">
+            <value>7. Sharing resources with Other households</value>
+          </text>
+          <text id="/RCA_training_danvers/I/I17/0:label">
+            <value>No</value>
+          </text>
+          <text id="/RCA_training_danvers/D/D1:label">
+            <value>In the past 30 days, how much money have you spent on Cereals (Sorghum, Cassava, Millet, Maize, Wheat, rice) for your family consumption</value>
+          </text>
+          <text id="/RCA_training_danvers/Demographics/C4_repeat/C11/3:label">
+            <value>Formal Secondary School</value>
+          </text>
+          <text id="/RCA_training_danvers/H/H2E:hint">
+            <value>Use numbers 1 – 7 to answer number of days. Enter 0 if the coping strategy was not used.</value>
+          </text>
+          <text id="/RCA_training_danvers/H/H2H:label">
+            <value>How many of the past 7 days did you sell more animals than usual?</value>
+          </text>
+          <text id="/RCA_training_danvers/I/I13:label">
+            <value>3. Lack of free access/movement</value>
+          </text>
+          <text id="/RCA_training_danvers/E0/noteFCS:label">
+            <value>The next 3 screens will present 3 questions on 10 food groups.
+
+1. Over the past one week (7 days), how many days did you or others in your household consume any of the foods listed in the food group? 
+2. How much did you spend in total for each group of food over the last 7 days in Somali shillings (SOS)? 
+3. How was the food acquired?</value>
+          </text>
+          <text id="/RCA_training_danvers/EB/E2B:label">
+            <value>Over the last 7 days, how many days did you consume Maize</value>
+          </text>
+          <text id="/RCA_training_danvers/EA/E3A:hint">
+            <value>(Maize Grain/Flour; Green Maize; Rice; Finger Millet ; Pearl Millet; Sorghum; Wheat Flour; Bread; Pasta; Other Cereal)</value>
+          </text>
+          <text id="/RCA_training_danvers/Demographics/C4_repeat/C7/2:label">
+            <value>Spouse</value>
+          </text>
+          <text id="/RCA_training_danvers/EA/E2A:label">
+            <value>Over the last 7 days, how many days did you consume sorghum</value>
+          </text>
+          <text id="/RCA_training_danvers/I/I13/0:label">
+            <value>No</value>
+          </text>
+          <text id="/RCA_training_danvers/EB/E4B/4:label">
+            <value>Gifts from non kin</value>
+          </text>
+          <text id="/RCA_training_danvers/D/D2:label">
+            <value>In the past 30 days, how much money have you spent on Fruits and vegetables(pumpkins, okra, green leaves etc) for your family consumption</value>
+          </text>
+          <text id="/RCA_training_danvers/I/I14:label">
+            <value>4. Livestock diseases</value>
+          </text>
+          <text id="/RCA_training_danvers/EC/E4C/99:label">
+            <value>Other</value>
+          </text>
+          <text id="/RCA_training_danvers/EA/E4A/10:label">
+            <value>Gathering</value>
+          </text>
+          <text id="/RCA_training_danvers/Demographics/num_hhmembers:label">
+            <value>How many household members are there currently?</value>
+          </text>
+          <text id="/RCA_training_danvers/Demographics/C3:label">
+            <value>If some have returned to the previous place of displacement, why?</value>
+          </text>
+          <text id="/RCA_training_danvers/EB/E4B/9:label">
+            <value>Fishing</value>
+          </text>
+          <text id="/RCA_training_danvers/EC/E4C:label">
+            <value>Did you want to purchase Maize but its not currently in the market?</value>
+          </text>
+          <text id="/RCA_training_danvers/EB/E4B/6:label">
+            <value>Borrowing/debts</value>
+          </text>
+          <text id="/RCA_training_danvers/Demographics/C2:label">
+            <value>Do you have any family members who are not living with you?</value>
+          </text>
+          <text id="/RCA_training_danvers/EB/E4B/8:label">
+            <value>Hunting</value>
+          </text>
+          <text id="/RCA_training_danvers/concent/con/0:label">
+            <value>No</value>
+          </text>
+          <text id="/RCA_training_danvers/concent/instruction_one:label">
+            <value>First of all inform and ask for houehold concent</value>
+          </text>
+          <text id="/RCA_training_danvers/H1/1:label">
+            <value>Yes</value>
+          </text>
+          <text id="/RCA_training_danvers/EB/E4B/10:label">
+            <value>Gathering</value>
+          </text>
+          <text id="/RCA_training_danvers/H/H2E:label">
+            <value>How many of the past 7 days did you Reduce number of meals eaten in a day?</value>
+          </text>
+          <text id="/RCA_training_danvers/I/I11:label">
+            <value>1. Insecurity/Violence</value>
+          </text>
+          <text id="/RCA_training_danvers/nt_hhid_not_ok:label">
+            <value>You have determined that this households details do not sufficiently match those of the baseline to be sure that you have identified coorect household. Swipe to finalise questionnaire.</value>
+          </text>
+          <text id="/RCA_training_danvers/H/H2G:hint">
+            <value>Use numbers 1 – 7 to answer number of days. Enter 0 if the coping strategy was not used.</value>
+          </text>
+          <text id="/RCA_training_danvers/I/I16:label">
+            <value>6. Human Sickness</value>
+          </text>
+          <text id="/RCA_training_danvers/EA/E4A/7:label">
+            <value>Food aid</value>
+          </text>
+          <text id="/RCA_training_danvers/EC/E4C/6:label">
+            <value>Borrowing/debts</value>
+          </text>
+          <text id="/RCA_training_danvers/I:label">
+            <value>I. Thinking about the year ahead, which MAIN THREATS do you worry about, that could have a negative impact on the daily life in your household?</value>
+          </text>
+          <text id="/RCA_training_danvers/D/D10:label">
+            <value>In the past 30 days, how much money have you spent on Milling and grinding for your family consumption</value>
+          </text>
+          <text id="/RCA_training_danvers/Demographics/C4_repeat/C7/3:label">
+            <value>Son/daughter</value>
+          </text>
+          <text id="/RCA_training_danvers/A:label">
+            <value>A. Respondent details</value>
+          </text>
+          <text id="/RCA_training_danvers/EC/E4C/5:label">
+            <value>Market/ shop purchase</value>
+          </text>
+          <text id="/RCA_training_danvers/A/hhIdentification/A7:label">
+            <value>Town Name</value>
+          </text>
+          <text id="/RCA_training_danvers/H/H2D:label">
+            <value>How many of the past 7 days did you restrict consumption by adults in order for small children to eat?</value>
+          </text>
+          <text id="/RCA_training_danvers/Demographics/C2/1:label">
+            <value>Yes</value>
+          </text>
+          <text id="/RCA_training_danvers/D/D7:label">
+            <value>In the past 30 days, how much money have you spent on Sugar, honey, sweets for your family consumption</value>
+          </text>
+          <text id="/RCA_training_danvers/A/hhIdentification/A6:label">
+            <value>District Name</value>
+          </text>
+          <text id="/RCA_training_danvers/H/H2A:label">
+            <value>How many of the past 7 days did you rely on less preferred or less expensive food?</value>
+          </text>
+          <text id="/RCA_training_danvers/I/I15/1:label">
+            <value>Yes</value>
+          </text>
+          <text id="/RCA_training_danvers/EB/E4B/7:label">
+            <value>Food aid</value>
+          </text>
+          <text id="/RCA_training_danvers/Demographics/C4_repeat/C6:label">
+            <value>C6. What is <output value=" /RCA_training_danvers/Demographics/C4_repeat/C4 "/>'s age?</value>
+          </text>
+          <text id="/RCA_training_danvers/EC/E4C/4:label">
+            <value>Gifts from non kin</value>
+          </text>
+          <text id="/RCA_training_danvers/I/I15/0:label">
+            <value>No</value>
+          </text>
+          <text id="/RCA_training_danvers/I/I12/1:label">
+            <value>Yes</value>
+          </text>
+          <text id="/RCA_training_danvers/Demographics/C4_repeat/C5:label">
+            <value>C5. Sex of <output value=" /RCA_training_danvers/Demographics/C4_repeat/C4 "/></value></text>
+          <text id="/RCA_training_danvers/EB/E4B/99:label">
+            <value>Other</value>
+          </text>
+          <text id="/RCA_training_danvers/EC/E4C/9:label">
+            <value>Fishing</value>
+          </text>
+          <text id="/RCA_training_danvers/Demographics/C1:label">
+            <value>How many households in this village does your household have kinship ties to?</value>
+          </text>
+          <text id="/RCA_training_danvers/EB:label">
+            <value>EB. # Days Maize was eaten &amp; Source of Maize in the last 7 days</value>
+          </text>
+          <text id="/RCA_training_danvers/Demographics/C4_repeat/C7/5:label">
+            <value>Relative</value>
+          </text>
+          <text id="/RCA_training_danvers/D/D6:label">
+            <value>In the past 30 days, how much money have you spent on Cooking oil for your family consumption</value>
+          </text>
+          <text id="/RCA_training_danvers/EC/E4C/8:label">
+            <value>Hunting</value>
+          </text>
+          <text id="/RCA_training_danvers/EC/E3C:label">
+            <value>What was the main source of Cassava in the past 7 days</value>
+          </text>
+          <text id="/RCA_training_danvers/Demographics/C4_repeat/C11/2:label">
+            <value>Formal Primary School</value>
+          </text>
+          <text id="/RCA_training_danvers/H/H2C:hint">
+            <value>Use numbers 1 – 7 to answer number of days. Enter 0 if the coping strategy was not used.</value>
+          </text>
+          <text id="/RCA_training_danvers/H/H2G:label">
+            <value>How many of the past 7 days did you collect any unusual amounts of types of wild foods for this season?</value>
+          </text>
+          <text id="/RCA_training_danvers/H/H2F:hint">
+            <value>Use numbers 1 – 7 to answer number of days. Enter 0 if the coping strategy was not used.</value>
+          </text>
+          <text id="/RCA_training_danvers/A/hhIdentification/A5:label">
+            <value>Region Name</value>
+          </text>
+          <text id="/RCA_training_danvers/I/I12/0:label">
+            <value>No</value>
+          </text>
+          <text id="/RCA_training_danvers/I/I16/0:label">
+            <value>No</value>
+          </text>
+          <text id="/RCA_training_danvers/Demographics/C4_repeat/C7/4:label">
+            <value>Parent</value>
+          </text>
+          <text id="/RCA_training_danvers/EA/E4A/3:label">
+            <value>Gifts from Kin</value>
+          </text>
+          <text id="/RCA_training_danvers/Demographics/C4_repeat/C11/99:label">
+            <value>Other (Specify)</value>
+          </text>
+          <text id="/RCA_training_danvers/EB/E4B/1:label">
+            <value>Ownlivestock/crop/graden production</value>
+          </text>
+          <text id="/RCA_training_danvers/I/I11/1:label">
+            <value>Yes</value>
+          </text>
+          <text id="/RCA_training_danvers/Demographics/C3/2:label">
+            <value>Family member has a job in site of displacement</value>
+          </text>
+          <text id="/RCA_training_danvers/Demographics/C4_repeat/C4:label">
+            <value>C4. First Name of # <output value=" /RCA_training_danvers/Demographics/C4_repeat/pos "/> ?</value>
+          </text>
+          <text id="/RCA_training_danvers/D/D5:label">
+            <value>In the past 30 days, how much money have you spent on Pulses (Groundnuts, legumes, sesame, beans, etc) for your family consumption</value>
+          </text>
+          <text id="/RCA_training_danvers/H/H2A:hint">
+            <value>Use numbers 1 – 7 to answer number of days. Enter 0 if the coping strategy was not used.</value>
+          </text>
+          <text id="/RCA_training_danvers/EA/E4A/5:label">
+            <value>Market/ shop purchase</value>
+          </text>
+          <text id="/RCA_training_danvers/concent:label">
+            <value>INTRODUCTION AND DEFINITIONS</value>
+          </text>
+          <text id="/RCA_training_danvers/Demographics/C4_repeat/pos:label">
+            <value>position</value>
+          </text>
+          <text id="/RCA_training_danvers/Demographics:label">
+            <value>Demographics</value>
+          </text>
+          <text id="/RCA_training_danvers/Demographics/C4_repeat/instruction_3:label">
+            <value>Repeat all names at the end to check all HH members included</value>
+          </text>
+          <text id="/RCA_training_danvers/EB/E4B/3:label">
+            <value>Gifts from Kin</value>
+          </text>
+          <text id="/RCA_training_danvers/EA/E4A/8:label">
+            <value>Hunting</value>
+          </text>
+          <text id="/RCA_training_danvers/EC/E4C/7:label">
+            <value>Food aid</value>
+          </text>
+          <text id="/RCA_training_danvers/Demographics/C3/1:label">
+            <value>To receive humanitarian assistance</value>
+          </text>
+          <text id="/RCA_training_danvers/concent/con:label">
+            <value>Hello, my name is _______ and I work with __________. I would like to ask you questions about your process of returning to this village and how you are settling in. We are asking many people these questions in order to undertand how well you are integrated into village life and your thoughts about remaining here. Your answers will be counted along with all the others. The questions will take about 20 minutes. The interview is confidential, which means that not only will we speak in private, but your name and any answers you provide will remain private. You don’t have to answer if you don’t want to. You may decline to answer any questions or stop the interview at any time. Is it okay for me to ask you these questions?</value>
+          </text>
+          <text id="/RCA_training_danvers/G0:label">
+            <value>G0 Coping Strategy Index</value>
+          </text>
+          <text id="/RCA_training_danvers/EA/E4A/9:label">
+            <value>Fishing</value>
+          </text>
+          <text id="/RCA_training_danvers/EA:label">
+            <value>EA. # Days Sorghum was eaten &amp; Source of Sorghum in the last 7 days</value>
+          </text>
+          <text id="/RCA_training_danvers/E0:label">
+            <value>E. NUTRITIONAL STATUS AND AVAILABILITY OF FOOD</value>
+          </text>
+          <text id="/RCA_training_danvers/EA/E4A/6:label">
+            <value>Borrowing/debts</value>
+          </text>
+          <text id="/RCA_training_danvers/Demographics/C4_repeat/C7/1:label">
+            <value>HHH</value>
+          </text>
+          <text id="/RCA_training_danvers/EB/E3B:label">
+            <value>What was the main source of Maize in the past 7 days</value>
+          </text>
+          <text id="/RCA_training_danvers/Demographics/C4_repeat/C7/6:label">
+            <value>Non-Relative</value>
+          </text>
+          <text id="/RCA_training_danvers/I/I17/1:label">
+            <value>Yes</value>
+          </text>
+          <text id="/RCA_training_danvers/EC:label">
+            <value>EC. # Days Cassave was eaten &amp; Source of Cassave in the last 7 days</value>
+          </text>
+          <text id="/RCA_training_danvers/EA/E3A:label">
+            <value>What was the main source of sorghum in the past 7 days</value>
+          </text>
+          <text id="/RCA_training_danvers/Demographics/C4_repeat/C8:label">
+            <value>C8. <output value=" /RCA_training_danvers/Demographics/C4_repeat/C4 "/> returned to this village in which month?</value>
+          </text>
+          <text id="/RCA_training_danvers/Demographics/C4_repeat/C11/1:label">
+            <value>Madrassa</value>
+          </text>
+          <text id="/RCA_training_danvers/H/H2D:hint">
+            <value>Use numbers 1 – 7 to answer number of days. Enter 0 if the coping strategy was not used.</value>
+          </text>
+          <text id="/RCA_training_danvers/EA/E2A:hint">
+            <value>(Maize Grain/Flour; Green Maize; Rice; Finger Millet ; Pearl Millet; Sorghum; Wheat Flour; Bread; Pasta; Other Cereal)</value>
+          </text>
+          <text id="/RCA_training_danvers/Demographics/C3/6:label">
+            <value>Other (Specify)</value>
+          </text>
+          <text id="/RCA_training_danvers/A/hhIdentification/A2:label">
+            <value>Interviewer name</value>
+          </text>
+          <text id="/RCA_training_danvers/H/H2F:label">
+            <value>How many of the past 7 days did you skip entire days without eating?</value>
+          </text>
+          <text id="/RCA_training_danvers/EB/E4B/2:label">
+            <value>Work for food</value>
+          </text>
+          <text id="/RCA_training_danvers/I/I11/0:label">
+            <value>No</value>
+          </text>
+          <text id="/RCA_training_danvers/G0/csiNote:label">
+            <value>The next 8 screens will present a list of coping strategies that could be used when the household does not have enough food or money to buy food. 
+Enter 0 if not used.</value>
+          </text>
+          <text id="/RCA_training_danvers/EA/E4A/99:label">
+            <value>Other</value>
+          </text>
+          <text id="/RCA_training_danvers/H/H2H:hint">
+            <value>Use numbers 1 – 7 to answer number of days. Enter 0 if the coping strategy was not used.</value>
+          </text>
+          <text id="/RCA_training_danvers/EA/E4A:label">
+            <value>Did you want to purchase sorghum but its not currently in the market?</value>
+          </text>
+          <text id="/RCA_training_danvers/Demographics/C4_repeat:label">
+            <value>C4. HOUSEHOLD MEMBER</value>
+          </text>
+          <text id="/RCA_training_danvers/EC/E4C/1:label">
+            <value>Ownlivestock/crop/graden production</value>
+          </text>
+          <text id="/RCA_training_danvers/A/hhIdentification/A4:label">
+            <value>Organisation Assesing</value>
+          </text>
+          <text id="/RCA_training_danvers/I/I13/1:label">
+            <value>Yes</value>
+          </text>
+          <text id="/RCA_training_danvers/EA/E4A/2:label">
+            <value>Work for food</value>
+          </text>
+          <text id="/RCA_training_danvers/H:label">
+            <value>H2</value>
+          </text>
+          <text id="/RCA_training_danvers/D/D9:label">
+            <value>In the past 30 days, how much money have you spent on Clothes, shoes for your family consumption</value>
+          </text>
+          <text id="/RCA_training_danvers/Demographics/C4_repeat/C11/4:label">
+            <value>Community School</value>
+          </text>
+          <text id="/RCA_training_danvers/H/H2B:hint">
+            <value>Use numbers 1 – 7 to answer number of days. Enter 0 if the coping strategy was not used.</value>
+          </text>
+          <text id="/RCA_training_danvers/EC/E2C:label">
+            <value>Over the last 7 days, how many days did you consume Cassava</value>
+          </text>
+          <text id="/RCA_training_danvers/A/hhIdentification/A1:label">
+            <value>Date of interview</value>
+          </text>
+          <text id="/RCA_training_danvers/EA/E4A/1:label">
+            <value>Ownlivestock/crop/graden production</value>
+          </text>
+          <text id="/RCA_training_danvers/D/D3:label">
+            <value>In the past 30 days, how much money have you spent on Roots and Tubers (Sweet potatoes, irish potatoes, yam etc) for your family consumption</value>
+          </text>
+          <text id="/RCA_training_danvers/Demographics/C4_repeat/C7:label">
+            <value>C7. What is the relation of <output value=" /RCA_training_danvers/Demographics/C4_repeat/C4 "/> to the household head?</value>
+          </text>
+          <text id="/RCA_training_danvers/EC/E4C/3:label">
+            <value>Gifts from Kin</value>
+          </text>
+          <text id="/RCA_training_danvers/A/hhIdentification/A3:label">
+            <value>Supervisor Name</value>
+          </text>
+          <text id="/RCA_training_danvers/A/hhIdentification:label">
+            <value>Household Identification</value>
+          </text>
+          <text id="/RCA_training_danvers/H/H2C:label">
+            <value>How many of the past 7 days did you limit portion size at meal time?</value>
+          </text>
+          <text id="/RCA_training_danvers/D/D8:label">
+            <value>In the past 30 days, how much money have you spent on all other food items (milk, eggs,salt, coffee, tea, pasta, etc) for your family consumption</value>
+          </text>
+          <text id="/RCA_training_danvers/concent/instruction_two:label">
+            <value>Before the interview, make sure you walk around the household to put answers into context. Ask for permission first, and look at their assets, food present in granary and kitchen, and general conditions of the household. In this way you will be better able to probe answers that don’t seem to make sense.</value>
+          </text>
+          <text id="/RCA_training_danvers/H1/0:label">
+            <value>No</value>
+          </text>
+          <text id="/RCA_training_danvers/EB/E4B:label">
+            <value>Did you want to purchase Maize but its not currently in the market?</value>
+          </text>
+          <text id="/RCA_training_danvers/I/I14/1:label">
+            <value>Yes</value>
+          </text>
+          <text id="/RCA_training_danvers/I/I14/0:label">
+            <value>No</value>
+          </text>
+          <text id="/RCA_training_danvers/Demographics/C3/3:label">
+            <value>Family member goes to school in site of displacement</value>
+          </text>
+          <text id="/RCA_training_danvers/A/hhIdentification/A8:label">
+            <value>Site Name</value>
+          </text>
+          <text id="/RCA_training_danvers/concent/con/1:label">
+            <value>Yes</value>
+          </text>
+          <text id="/RCA_training_danvers/EA/E4A/4:label">
+            <value>Gifts from non kin</value>
+          </text>
+          <text id="/RCA_training_danvers/H1:label">
+            <value>In the past 7 days were there times when ypu did not have enough food or enough money to buy food?</value>
+          </text>
+          <text id="/RCA_training_danvers/EC/E4C/10:label">
+            <value>Gathering</value>
+          </text>
+        </translation>
+      </itext>
+      <instance>
+        <RCA_training_danvers id="RCA_training_danvers">
+          <start/>
+          <today/>
+          <deviceid/>
+          <subscruberid/>
+          <imei/>
+          <phonenumber/>
+          <A>
+            <hhIdentification>
+              <A1/>
+              <A2/>
+              <A3/>
+              <A4/>
+              <A5/>
+              <A6/>
+              <A7/>
+              <A8/>
+            </hhIdentification>
+          </A>
+          <concent>
+            <instruction_one/>
+            <con/>
+            <instruction_two/>
+          </concent>
+          <nt_hhid_not_ok/>
+          <Demographics>
+            <C1/>
+            <C2/>
+            <C3/>
+            <num_hhmembers/>
+            <C4_repeat_count/>
+            <C4_repeat jr:template="">
+              <pos/>
+              <instruction_3/>
+              <C4/>
+              <C5/>
+              <C6/>
+              <C7/>
+              <C8/>
+              <C11/>
+            </C4_repeat>
+          </Demographics>
+          <E0>
+            <noteFCS/>
+          </E0>
+          <EA>
+            <E2A/>
+            <E3A/>
+            <E4A/>
+          </EA>
+          <EB>
+            <E2B/>
+            <E3B/>
+            <E4B/>
+          </EB>
+          <EC>
+            <E2C/>
+            <E3C/>
+            <E4C/>
+          </EC>
+          <D>
+            <D1/>
+            <D2/>
+            <D3/>
+            <D4/>
+            <D5/>
+            <D6/>
+            <D7/>
+            <D8/>
+            <D9/>
+            <D10/>
+          </D>
+          <H1/>
+          <G0>
+            <csiNote/>
+          </G0>
+          <H>
+            <H2A/>
+            <H2B/>
+            <H2C/>
+            <H2D/>
+            <H2E/>
+            <H2F/>
+            <H2G/>
+            <H2H/>
+          </H>
+          <I>
+            <I11/>
+            <I12/>
+            <I13/>
+            <I14/>
+            <I15/>
+            <I16/>
+            <I17/>
+          </I>
+          <meta>
+            <instanceID/>
+            <instanceName/>
+          </meta>
+        </RCA_training_danvers>
+      </instance>
+      <bind jr:preload="timestamp" jr:preloadParams="start" nodeset="/RCA_training_danvers/start" type="dateTime"/>
+      <bind jr:preload="date" jr:preloadParams="today" nodeset="/RCA_training_danvers/today" type="date"/>
+      <bind jr:preload="property" jr:preloadParams="deviceid" nodeset="/RCA_training_danvers/deviceid" type="string"/>
+      <bind jr:preload="property" jr:preloadParams="subscriberid" nodeset="/RCA_training_danvers/subscruberid" type="string"/>
+      <bind jr:preload="property" jr:preloadParams="deviceid" nodeset="/RCA_training_danvers/imei" type="string"/>
+      <bind jr:preload="property" jr:preloadParams="phonenumber" nodeset="/RCA_training_danvers/phonenumber" type="string"/>
+      <bind nodeset="/RCA_training_danvers/A/hhIdentification/A1" required="true()" type="date"/>
+      <bind nodeset="/RCA_training_danvers/A/hhIdentification/A2" required="true()" type="string"/>
+      <bind nodeset="/RCA_training_danvers/A/hhIdentification/A3" type="string"/>
+      <bind nodeset="/RCA_training_danvers/A/hhIdentification/A4" type="string"/>
+      <bind nodeset="/RCA_training_danvers/A/hhIdentification/A5" type="string"/>
+      <bind nodeset="/RCA_training_danvers/A/hhIdentification/A6" type="string"/>
+      <bind nodeset="/RCA_training_danvers/A/hhIdentification/A7" type="string"/>
+      <bind nodeset="/RCA_training_danvers/A/hhIdentification/A8" type="string"/>
+      <bind nodeset="/RCA_training_danvers/concent/instruction_one" readonly="true()" type="string"/>
+      <bind nodeset="/RCA_training_danvers/concent/con" required="true()" type="select1"/>
+      <bind nodeset="/RCA_training_danvers/concent/instruction_two" readonly="true()" type="string"/>
+      <bind nodeset="/RCA_training_danvers/nt_hhid_not_ok" readonly="true()" type="string"/>
+      <bind nodeset="/RCA_training_danvers/Demographics/C1" type="int"/>
+      <bind nodeset="/RCA_training_danvers/Demographics/C2" type="select1"/>
+      <bind nodeset="/RCA_training_danvers/Demographics/C3" required="true()" type="select1"/>
+      <bind nodeset="/RCA_training_danvers/Demographics/num_hhmembers" required="true()" type="int"/>
+      <bind calculate=" /RCA_training_danvers/Demographics/num_hhmembers " nodeset="/RCA_training_danvers/Demographics/C4_repeat_count" readonly="true()" type="string"/>
+      <bind nodeset="/RCA_training_danvers/Demographics/C4_repeat" required="true()"/>
+      <bind calculate="position(..)" nodeset="/RCA_training_danvers/Demographics/C4_repeat/pos" required="true()" type="string"/>
+      <bind nodeset="/RCA_training_danvers/Demographics/C4_repeat/instruction_3" readonly="true()" type="string"/>
+      <bind nodeset="/RCA_training_danvers/Demographics/C4_repeat/C4" required="true()" type="string"/>
+      <bind nodeset="/RCA_training_danvers/Demographics/C4_repeat/C5" type="string"/>
+      <bind nodeset="/RCA_training_danvers/Demographics/C4_repeat/C6" type="int"/>
+      <bind nodeset="/RCA_training_danvers/Demographics/C4_repeat/C7" required="true()" type="select1"/>
+      <bind nodeset="/RCA_training_danvers/Demographics/C4_repeat/C8" required="true()" type="string"/>
+      <bind nodeset="/RCA_training_danvers/Demographics/C4_repeat/C11" required="true()" type="select1"/>
+      <bind nodeset="/RCA_training_danvers/E0" required="true()"/>
+      <bind nodeset="/RCA_training_danvers/E0/noteFCS" readonly="true()" type="string"/>
+      <bind nodeset="/RCA_training_danvers/EA" required="true()"/>
+      <bind constraint="(.&gt;=0 and .&lt;=7)" nodeset="/RCA_training_danvers/EA/E2A" type="int"/>
+      <bind nodeset="/RCA_training_danvers/EA/E3A" type="int"/>
+      <bind nodeset="/RCA_training_danvers/EA/E4A" type="select1"/>
+      <bind nodeset="/RCA_training_danvers/EB" required="true()"/>
+      <bind nodeset="/RCA_training_danvers/EB/E2B" type="int"/>
+      <bind nodeset="/RCA_training_danvers/EB/E3B" type="int"/>
+      <bind nodeset="/RCA_training_danvers/EB/E4B" type="select1"/>
+      <bind nodeset="/RCA_training_danvers/EC" required="true()"/>
+      <bind nodeset="/RCA_training_danvers/EC/E2C" type="int"/>
+      <bind nodeset="/RCA_training_danvers/EC/E3C" type="int"/>
+      <bind nodeset="/RCA_training_danvers/EC/E4C" type="select1"/>
+      <bind nodeset="/RCA_training_danvers/D" required="true()"/>
+      <bind nodeset="/RCA_training_danvers/D/D1" type="int"/>
+      <bind nodeset="/RCA_training_danvers/D/D2" type="int"/>
+      <bind nodeset="/RCA_training_danvers/D/D3" type="int"/>
+      <bind nodeset="/RCA_training_danvers/D/D4" type="int"/>
+      <bind nodeset="/RCA_training_danvers/D/D5" type="int"/>
+      <bind nodeset="/RCA_training_danvers/D/D6" type="int"/>
+      <bind nodeset="/RCA_training_danvers/D/D7" type="int"/>
+      <bind nodeset="/RCA_training_danvers/D/D8" type="int"/>
+      <bind nodeset="/RCA_training_danvers/D/D9" type="int"/>
+      <bind nodeset="/RCA_training_danvers/D/D10" type="int"/>
+      <bind nodeset="/RCA_training_danvers/H1" required="true()" type="select1"/>
+      <bind nodeset="/RCA_training_danvers/G0" relevant="selected( /RCA_training_danvers/H1 , '1')" required="true()"/>
+      <bind nodeset="/RCA_training_danvers/G0/csiNote" readonly="true()" relevant="selected( /RCA_training_danvers/H1 , '1')" type="string"/>
+      <bind nodeset="/RCA_training_danvers/H" relevant="selected( /RCA_training_danvers/H1 , '1')" required="true()"/>
+      <bind constraint="(.&gt;=0 and .&lt;=7)" nodeset="/RCA_training_danvers/H/H2A" type="int"/>
+      <bind constraint="(.&gt;=0 and .&lt;=7)" nodeset="/RCA_training_danvers/H/H2B" type="int"/>
+      <bind constraint="(.&gt;=0 and .&lt;=7)" nodeset="/RCA_training_danvers/H/H2C" type="int"/>
+      <bind constraint="(.&gt;=0 and .&lt;=7)" nodeset="/RCA_training_danvers/H/H2D" type="int"/>
+      <bind constraint="(.&gt;=0 and .&lt;=7)" nodeset="/RCA_training_danvers/H/H2E" type="int"/>
+      <bind constraint="(.&gt;=0 and .&lt;=7)" nodeset="/RCA_training_danvers/H/H2F" type="int"/>
+      <bind constraint="(.&gt;=0 and .&lt;=7)" nodeset="/RCA_training_danvers/H/H2G" type="int"/>
+      <bind constraint="(.&gt;=0 and .&lt;=7)" nodeset="/RCA_training_danvers/H/H2H" type="int"/>
+      <bind nodeset="/RCA_training_danvers/I" required="true()"/>
+      <bind nodeset="/RCA_training_danvers/I/I11" type="select1"/>
+      <bind nodeset="/RCA_training_danvers/I/I12" type="select1"/>
+      <bind nodeset="/RCA_training_danvers/I/I13" type="select1"/>
+      <bind nodeset="/RCA_training_danvers/I/I14" type="select1"/>
+      <bind nodeset="/RCA_training_danvers/I/I15" type="select1"/>
+      <bind nodeset="/RCA_training_danvers/I/I16" type="select1"/>
+      <bind nodeset="/RCA_training_danvers/I/I17" type="select1"/>
+      <bind calculate="concat('uuid:', uuid())" nodeset="/RCA_training_danvers/meta/instanceID" readonly="true()" type="string"/>
+      <bind calculate="concat( /RCA_training_danvers/A/hhIdentification/A8 ,'-',string(today()))" nodeset="/RCA_training_danvers/meta/instanceName" type="string"/>
+    </model>
+  </h:head>
+  <h:body>
+    <group ref="/RCA_training_danvers/A">
+      <label ref="jr:itext('/RCA_training_danvers/A:label')"/>
+      <group ref="/RCA_training_danvers/A/hhIdentification">
+        <label ref="jr:itext('/RCA_training_danvers/A/hhIdentification:label')"/>
+        <input ref="/RCA_training_danvers/A/hhIdentification/A1">
+          <label ref="jr:itext('/RCA_training_danvers/A/hhIdentification/A1:label')"/>
+        </input>
+        <input ref="/RCA_training_danvers/A/hhIdentification/A2">
+          <label ref="jr:itext('/RCA_training_danvers/A/hhIdentification/A2:label')"/>
+        </input>
+        <input ref="/RCA_training_danvers/A/hhIdentification/A3">
+          <label ref="jr:itext('/RCA_training_danvers/A/hhIdentification/A3:label')"/>
+        </input>
+        <input ref="/RCA_training_danvers/A/hhIdentification/A4">
+          <label ref="jr:itext('/RCA_training_danvers/A/hhIdentification/A4:label')"/>
+        </input>
+        <input ref="/RCA_training_danvers/A/hhIdentification/A5">
+          <label ref="jr:itext('/RCA_training_danvers/A/hhIdentification/A5:label')"/>
+        </input>
+        <input ref="/RCA_training_danvers/A/hhIdentification/A6">
+          <label ref="jr:itext('/RCA_training_danvers/A/hhIdentification/A6:label')"/>
+        </input>
+        <input ref="/RCA_training_danvers/A/hhIdentification/A7">
+          <label ref="jr:itext('/RCA_training_danvers/A/hhIdentification/A7:label')"/>
+        </input>
+        <input ref="/RCA_training_danvers/A/hhIdentification/A8">
+          <label ref="jr:itext('/RCA_training_danvers/A/hhIdentification/A8:label')"/>
+        </input>
+      </group>
+    </group>
+    <group appearance="field-list" ref="/RCA_training_danvers/concent">
+      <label ref="jr:itext('/RCA_training_danvers/concent:label')"/>
+      <input ref="/RCA_training_danvers/concent/instruction_one">
+        <label ref="jr:itext('/RCA_training_danvers/concent/instruction_one:label')"/>
+      </input>
+      <select1 ref="/RCA_training_danvers/concent/con">
+        <label ref="jr:itext('/RCA_training_danvers/concent/con:label')"/>
+        <item>
+          <label ref="jr:itext('/RCA_training_danvers/concent/con/0:label')"/>
+          <value>0</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/RCA_training_danvers/concent/con/1:label')"/>
+          <value>1</value>
+        </item>
+      </select1>
+      <input ref="/RCA_training_danvers/concent/instruction_two">
+        <label ref="jr:itext('/RCA_training_danvers/concent/instruction_two:label')"/>
+      </input>
+    </group>
+    <input ref="/RCA_training_danvers/nt_hhid_not_ok">
+      <label ref="jr:itext('/RCA_training_danvers/nt_hhid_not_ok:label')"/>
+    </input>
+    <group ref="/RCA_training_danvers/Demographics">
+      <label ref="jr:itext('/RCA_training_danvers/Demographics:label')"/>
+      <input ref="/RCA_training_danvers/Demographics/C1">
+        <label ref="jr:itext('/RCA_training_danvers/Demographics/C1:label')"/>
+      </input>
+      <select1 ref="/RCA_training_danvers/Demographics/C2">
+        <label ref="jr:itext('/RCA_training_danvers/Demographics/C2:label')"/>
+        <item>
+          <label ref="jr:itext('/RCA_training_danvers/Demographics/C2/0:label')"/>
+          <value>0</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/RCA_training_danvers/Demographics/C2/1:label')"/>
+          <value>1</value>
+        </item>
+      </select1>
+      <select1 ref="/RCA_training_danvers/Demographics/C3">
+        <label ref="jr:itext('/RCA_training_danvers/Demographics/C3:label')"/>
+        <item>
+          <label ref="jr:itext('/RCA_training_danvers/Demographics/C3/1:label')"/>
+          <value>1</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/RCA_training_danvers/Demographics/C3/2:label')"/>
+          <value>2</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/RCA_training_danvers/Demographics/C3/3:label')"/>
+          <value>3</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/RCA_training_danvers/Demographics/C3/4:label')"/>
+          <value>4</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/RCA_training_danvers/Demographics/C3/5:label')"/>
+          <value>5</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/RCA_training_danvers/Demographics/C3/6:label')"/>
+          <value>6</value>
+        </item>
+      </select1>
+      <input ref="/RCA_training_danvers/Demographics/num_hhmembers">
+        <label ref="jr:itext('/RCA_training_danvers/Demographics/num_hhmembers:label')"/>
+      </input>
+      <group ref="/RCA_training_danvers/Demographics/C4_repeat">
+        <label ref="jr:itext('/RCA_training_danvers/Demographics/C4_repeat:label')"/>
+        <repeat jr:count=" /RCA_training_danvers/Demographics/C4_repeat_count " nodeset="/RCA_training_danvers/Demographics/C4_repeat">
+          <input ref="/RCA_training_danvers/Demographics/C4_repeat/instruction_3">
+            <label ref="jr:itext('/RCA_training_danvers/Demographics/C4_repeat/instruction_3:label')"/>
+          </input>
+          <input ref="/RCA_training_danvers/Demographics/C4_repeat/C4">
+            <label ref="jr:itext('/RCA_training_danvers/Demographics/C4_repeat/C4:label')"/>
+          </input>
+          <input ref="/RCA_training_danvers/Demographics/C4_repeat/C5">
+            <label ref="jr:itext('/RCA_training_danvers/Demographics/C4_repeat/C5:label')"/>
+          </input>
+          <input ref="/RCA_training_danvers/Demographics/C4_repeat/C6">
+            <label ref="jr:itext('/RCA_training_danvers/Demographics/C4_repeat/C6:label')"/>
+          </input>
+          <select1 ref="/RCA_training_danvers/Demographics/C4_repeat/C7">
+            <label ref="jr:itext('/RCA_training_danvers/Demographics/C4_repeat/C7:label')"/>
+            <item>
+              <label ref="jr:itext('/RCA_training_danvers/Demographics/C4_repeat/C7/1:label')"/>
+              <value>1</value>
+            </item>
+            <item>
+              <label ref="jr:itext('/RCA_training_danvers/Demographics/C4_repeat/C7/2:label')"/>
+              <value>2</value>
+            </item>
+            <item>
+              <label ref="jr:itext('/RCA_training_danvers/Demographics/C4_repeat/C7/3:label')"/>
+              <value>3</value>
+            </item>
+            <item>
+              <label ref="jr:itext('/RCA_training_danvers/Demographics/C4_repeat/C7/4:label')"/>
+              <value>4</value>
+            </item>
+            <item>
+              <label ref="jr:itext('/RCA_training_danvers/Demographics/C4_repeat/C7/5:label')"/>
+              <value>5</value>
+            </item>
+            <item>
+              <label ref="jr:itext('/RCA_training_danvers/Demographics/C4_repeat/C7/6:label')"/>
+              <value>6</value>
+            </item>
+          </select1>
+          <input ref="/RCA_training_danvers/Demographics/C4_repeat/C8">
+            <label ref="jr:itext('/RCA_training_danvers/Demographics/C4_repeat/C8:label')"/>
+          </input>
+          <select1 ref="/RCA_training_danvers/Demographics/C4_repeat/C11">
+            <label ref="jr:itext('/RCA_training_danvers/Demographics/C4_repeat/C11:label')"/>
+            <item>
+              <label ref="jr:itext('/RCA_training_danvers/Demographics/C4_repeat/C11/1:label')"/>
+              <value>1</value>
+            </item>
+            <item>
+              <label ref="jr:itext('/RCA_training_danvers/Demographics/C4_repeat/C11/2:label')"/>
+              <value>2</value>
+            </item>
+            <item>
+              <label ref="jr:itext('/RCA_training_danvers/Demographics/C4_repeat/C11/3:label')"/>
+              <value>3</value>
+            </item>
+            <item>
+              <label ref="jr:itext('/RCA_training_danvers/Demographics/C4_repeat/C11/4:label')"/>
+              <value>4</value>
+            </item>
+            <item>
+              <label ref="jr:itext('/RCA_training_danvers/Demographics/C4_repeat/C11/99:label')"/>
+              <value>99</value>
+            </item>
+          </select1>
+        </repeat>
+      </group>
+    </group>
+    <group appearance="field-list" ref="/RCA_training_danvers/E0">
+      <label ref="jr:itext('/RCA_training_danvers/E0:label')"/>
+      <input appearance="label" ref="/RCA_training_danvers/E0/noteFCS">
+        <label ref="jr:itext('/RCA_training_danvers/E0/noteFCS:label')"/>
+        <hint ref="jr:itext('/RCA_training_danvers/E0/noteFCS:hint')"/>
+      </input>
+    </group>
+    <group appearance="field-list" ref="/RCA_training_danvers/EA">
+      <label ref="jr:itext('/RCA_training_danvers/EA:label')"/>
+      <input appearance="list-nolabel" ref="/RCA_training_danvers/EA/E2A">
+        <label ref="jr:itext('/RCA_training_danvers/EA/E2A:label')"/>
+        <hint ref="jr:itext('/RCA_training_danvers/EA/E2A:hint')"/>
+      </input>
+      <input appearance="list-nolabel" ref="/RCA_training_danvers/EA/E3A">
+        <label ref="jr:itext('/RCA_training_danvers/EA/E3A:label')"/>
+        <hint ref="jr:itext('/RCA_training_danvers/EA/E3A:hint')"/>
+      </input>
+      <select1 ref="/RCA_training_danvers/EA/E4A">
+        <label ref="jr:itext('/RCA_training_danvers/EA/E4A:label')"/>
+        <hint ref="jr:itext('/RCA_training_danvers/EA/E4A:hint')"/>
+        <item>
+          <label ref="jr:itext('/RCA_training_danvers/EA/E4A/1:label')"/>
+          <value>1</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/RCA_training_danvers/EA/E4A/2:label')"/>
+          <value>2</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/RCA_training_danvers/EA/E4A/3:label')"/>
+          <value>3</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/RCA_training_danvers/EA/E4A/4:label')"/>
+          <value>4</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/RCA_training_danvers/EA/E4A/5:label')"/>
+          <value>5</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/RCA_training_danvers/EA/E4A/6:label')"/>
+          <value>6</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/RCA_training_danvers/EA/E4A/7:label')"/>
+          <value>7</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/RCA_training_danvers/EA/E4A/8:label')"/>
+          <value>8</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/RCA_training_danvers/EA/E4A/9:label')"/>
+          <value>9</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/RCA_training_danvers/EA/E4A/10:label')"/>
+          <value>10</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/RCA_training_danvers/EA/E4A/99:label')"/>
+          <value>99</value>
+        </item>
+      </select1>
+    </group>
+    <group appearance="field-list" ref="/RCA_training_danvers/EB">
+      <label ref="jr:itext('/RCA_training_danvers/EB:label')"/>
+      <input ref="/RCA_training_danvers/EB/E2B">
+        <label ref="jr:itext('/RCA_training_danvers/EB/E2B:label')"/>
+      </input>
+      <input ref="/RCA_training_danvers/EB/E3B">
+        <label ref="jr:itext('/RCA_training_danvers/EB/E3B:label')"/>
+      </input>
+      <select1 ref="/RCA_training_danvers/EB/E4B">
+        <label ref="jr:itext('/RCA_training_danvers/EB/E4B:label')"/>
+        <item>
+          <label ref="jr:itext('/RCA_training_danvers/EB/E4B/1:label')"/>
+          <value>1</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/RCA_training_danvers/EB/E4B/2:label')"/>
+          <value>2</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/RCA_training_danvers/EB/E4B/3:label')"/>
+          <value>3</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/RCA_training_danvers/EB/E4B/4:label')"/>
+          <value>4</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/RCA_training_danvers/EB/E4B/5:label')"/>
+          <value>5</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/RCA_training_danvers/EB/E4B/6:label')"/>
+          <value>6</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/RCA_training_danvers/EB/E4B/7:label')"/>
+          <value>7</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/RCA_training_danvers/EB/E4B/8:label')"/>
+          <value>8</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/RCA_training_danvers/EB/E4B/9:label')"/>
+          <value>9</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/RCA_training_danvers/EB/E4B/10:label')"/>
+          <value>10</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/RCA_training_danvers/EB/E4B/99:label')"/>
+          <value>99</value>
+        </item>
+      </select1>
+    </group>
+    <group appearance="field-list" ref="/RCA_training_danvers/EC">
+      <label ref="jr:itext('/RCA_training_danvers/EC:label')"/>
+      <input ref="/RCA_training_danvers/EC/E2C">
+        <label ref="jr:itext('/RCA_training_danvers/EC/E2C:label')"/>
+      </input>
+      <input ref="/RCA_training_danvers/EC/E3C">
+        <label ref="jr:itext('/RCA_training_danvers/EC/E3C:label')"/>
+      </input>
+      <select1 ref="/RCA_training_danvers/EC/E4C">
+        <label ref="jr:itext('/RCA_training_danvers/EC/E4C:label')"/>
+        <item>
+          <label ref="jr:itext('/RCA_training_danvers/EC/E4C/1:label')"/>
+          <value>1</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/RCA_training_danvers/EC/E4C/2:label')"/>
+          <value>2</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/RCA_training_danvers/EC/E4C/3:label')"/>
+          <value>3</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/RCA_training_danvers/EC/E4C/4:label')"/>
+          <value>4</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/RCA_training_danvers/EC/E4C/5:label')"/>
+          <value>5</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/RCA_training_danvers/EC/E4C/6:label')"/>
+          <value>6</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/RCA_training_danvers/EC/E4C/7:label')"/>
+          <value>7</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/RCA_training_danvers/EC/E4C/8:label')"/>
+          <value>8</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/RCA_training_danvers/EC/E4C/9:label')"/>
+          <value>9</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/RCA_training_danvers/EC/E4C/10:label')"/>
+          <value>10</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/RCA_training_danvers/EC/E4C/99:label')"/>
+          <value>99</value>
+        </item>
+      </select1>
+    </group>
+    <group ref="/RCA_training_danvers/D">
+      <label ref="jr:itext('/RCA_training_danvers/D:label')"/>
+      <input ref="/RCA_training_danvers/D/D1">
+        <label ref="jr:itext('/RCA_training_danvers/D/D1:label')"/>
+      </input>
+      <input ref="/RCA_training_danvers/D/D2">
+        <label ref="jr:itext('/RCA_training_danvers/D/D2:label')"/>
+      </input>
+      <input ref="/RCA_training_danvers/D/D3">
+        <label ref="jr:itext('/RCA_training_danvers/D/D3:label')"/>
+      </input>
+      <input ref="/RCA_training_danvers/D/D4">
+        <label ref="jr:itext('/RCA_training_danvers/D/D4:label')"/>
+      </input>
+      <input ref="/RCA_training_danvers/D/D5">
+        <label ref="jr:itext('/RCA_training_danvers/D/D5:label')"/>
+      </input>
+      <input ref="/RCA_training_danvers/D/D6">
+        <label ref="jr:itext('/RCA_training_danvers/D/D6:label')"/>
+      </input>
+      <input ref="/RCA_training_danvers/D/D7">
+        <label ref="jr:itext('/RCA_training_danvers/D/D7:label')"/>
+      </input>
+      <input ref="/RCA_training_danvers/D/D8">
+        <label ref="jr:itext('/RCA_training_danvers/D/D8:label')"/>
+      </input>
+      <input ref="/RCA_training_danvers/D/D9">
+        <label ref="jr:itext('/RCA_training_danvers/D/D9:label')"/>
+      </input>
+      <input ref="/RCA_training_danvers/D/D10">
+        <label ref="jr:itext('/RCA_training_danvers/D/D10:label')"/>
+      </input>
+    </group>
+    <select1 ref="/RCA_training_danvers/H1">
+      <label ref="jr:itext('/RCA_training_danvers/H1:label')"/>
+      <item>
+        <label ref="jr:itext('/RCA_training_danvers/H1/0:label')"/>
+        <value>0</value>
+      </item>
+      <item>
+        <label ref="jr:itext('/RCA_training_danvers/H1/1:label')"/>
+        <value>1</value>
+      </item>
+    </select1>
+    <group appearance="field-list" ref="/RCA_training_danvers/G0">
+      <label ref="jr:itext('/RCA_training_danvers/G0:label')"/>
+      <input ref="/RCA_training_danvers/G0/csiNote">
+        <label ref="jr:itext('/RCA_training_danvers/G0/csiNote:label')"/>
+      </input>
+    </group>
+    <group appearance="field-list" ref="/RCA_training_danvers/H">
+      <label ref="jr:itext('/RCA_training_danvers/H:label')"/>
+      <input ref="/RCA_training_danvers/H/H2A">
+        <label ref="jr:itext('/RCA_training_danvers/H/H2A:label')"/>
+        <hint ref="jr:itext('/RCA_training_danvers/H/H2A:hint')"/>
+      </input>
+      <input ref="/RCA_training_danvers/H/H2B">
+        <label ref="jr:itext('/RCA_training_danvers/H/H2B:label')"/>
+        <hint ref="jr:itext('/RCA_training_danvers/H/H2B:hint')"/>
+      </input>
+      <input ref="/RCA_training_danvers/H/H2C">
+        <label ref="jr:itext('/RCA_training_danvers/H/H2C:label')"/>
+        <hint ref="jr:itext('/RCA_training_danvers/H/H2C:hint')"/>
+      </input>
+      <input ref="/RCA_training_danvers/H/H2D">
+        <label ref="jr:itext('/RCA_training_danvers/H/H2D:label')"/>
+        <hint ref="jr:itext('/RCA_training_danvers/H/H2D:hint')"/>
+      </input>
+      <input ref="/RCA_training_danvers/H/H2E">
+        <label ref="jr:itext('/RCA_training_danvers/H/H2E:label')"/>
+        <hint ref="jr:itext('/RCA_training_danvers/H/H2E:hint')"/>
+      </input>
+      <input ref="/RCA_training_danvers/H/H2F">
+        <label ref="jr:itext('/RCA_training_danvers/H/H2F:label')"/>
+        <hint ref="jr:itext('/RCA_training_danvers/H/H2F:hint')"/>
+      </input>
+      <input ref="/RCA_training_danvers/H/H2G">
+        <label ref="jr:itext('/RCA_training_danvers/H/H2G:label')"/>
+        <hint ref="jr:itext('/RCA_training_danvers/H/H2G:hint')"/>
+      </input>
+      <input ref="/RCA_training_danvers/H/H2H">
+        <label ref="jr:itext('/RCA_training_danvers/H/H2H:label')"/>
+        <hint ref="jr:itext('/RCA_training_danvers/H/H2H:hint')"/>
+      </input>
+    </group>
+    <group appearance="field-list" ref="/RCA_training_danvers/I">
+      <label ref="jr:itext('/RCA_training_danvers/I:label')"/>
+      <select1 ref="/RCA_training_danvers/I/I11">
+        <label ref="jr:itext('/RCA_training_danvers/I/I11:label')"/>
+        <item>
+          <label ref="jr:itext('/RCA_training_danvers/I/I11/0:label')"/>
+          <value>0</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/RCA_training_danvers/I/I11/1:label')"/>
+          <value>1</value>
+        </item>
+      </select1>
+      <select1 ref="/RCA_training_danvers/I/I12">
+        <label ref="jr:itext('/RCA_training_danvers/I/I12:label')"/>
+        <item>
+          <label ref="jr:itext('/RCA_training_danvers/I/I12/0:label')"/>
+          <value>0</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/RCA_training_danvers/I/I12/1:label')"/>
+          <value>1</value>
+        </item>
+      </select1>
+      <select1 ref="/RCA_training_danvers/I/I13">
+        <label ref="jr:itext('/RCA_training_danvers/I/I13:label')"/>
+        <item>
+          <label ref="jr:itext('/RCA_training_danvers/I/I13/0:label')"/>
+          <value>0</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/RCA_training_danvers/I/I13/1:label')"/>
+          <value>1</value>
+        </item>
+      </select1>
+      <select1 ref="/RCA_training_danvers/I/I14">
+        <label ref="jr:itext('/RCA_training_danvers/I/I14:label')"/>
+        <item>
+          <label ref="jr:itext('/RCA_training_danvers/I/I14/0:label')"/>
+          <value>0</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/RCA_training_danvers/I/I14/1:label')"/>
+          <value>1</value>
+        </item>
+      </select1>
+      <select1 ref="/RCA_training_danvers/I/I15">
+        <label ref="jr:itext('/RCA_training_danvers/I/I15:label')"/>
+        <item>
+          <label ref="jr:itext('/RCA_training_danvers/I/I15/0:label')"/>
+          <value>0</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/RCA_training_danvers/I/I15/1:label')"/>
+          <value>1</value>
+        </item>
+      </select1>
+      <select1 ref="/RCA_training_danvers/I/I16">
+        <label ref="jr:itext('/RCA_training_danvers/I/I16:label')"/>
+        <item>
+          <label ref="jr:itext('/RCA_training_danvers/I/I16/0:label')"/>
+          <value>0</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/RCA_training_danvers/I/I16/1:label')"/>
+          <value>1</value>
+        </item>
+      </select1>
+      <select1 ref="/RCA_training_danvers/I/I17">
+        <label ref="jr:itext('/RCA_training_danvers/I/I17:label')"/>
+        <item>
+          <label ref="jr:itext('/RCA_training_danvers/I/I17/0:label')"/>
+          <value>0</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/RCA_training_danvers/I/I17/1:label')"/>
+          <value>1</value>
+        </item>
+      </select1>
+    </group>
+  </h:body>
+</h:html>
