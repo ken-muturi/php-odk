@@ -31,7 +31,7 @@ $users = array('admin' => 'mypass', 'guest' => 'guest');
 function check_user_pass( $data = null , $users = array('admin' => 'mypass', 'guest' => 'guest') )
 {
     global $realm;
-    $data = $data ?: http_digest_parse($_SERVER['PHP_AUTH_DIGEST']);
+    $data = $data ? $data : http_digest_parse($_SERVER['PHP_AUTH_DIGEST']);
 
     $A1 = md5($data['username'] . ':' . $realm . ':' . $users[$data['username']]);
     $A2 = md5($_SERVER['REQUEST_METHOD'].':'.$data['uri']);

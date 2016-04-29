@@ -59,21 +59,17 @@ else
 			die('Wrong Credentials!');
 
 		if ( ! check_user_pass( $data, array('admin' => 'mypass', 'guest' => 'guest')) )
+        {
 		    http_response_code( 401 );
+            die();
+        }
 
-		// header("Location:". site_url('submission/index.php'), true, 204);
-		http_response_code(201);
-		echo '<OpenRosaResponse xmlns="http://openrosa.org/http/response">
-    		<message nature="submit_success">Thanks</message>
-    	</OpenRosaResponse> ';
+        http_response_code(201);
+        echo '<OpenRosaResponse xmlns="http://openrosa.org/http/response">
+            <message nature="submit_success">Thanks</message>
+        </OpenRosaResponse> ';
 
-        // if( check_user_pass( $data, array('admin' => 'mypass', 'guest' => 'guest'))  )
-        // {
-        // 	header("Location:". site_url('submission/index.php'), true, 204);
-        // }
-        // else
-        // {
-        // 	http_response_code(401);
-        // }
+        header("Location:". site_url('submission/index.php'), true, 204);
+        
     }
 }
