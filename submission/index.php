@@ -1,75 +1,128 @@
 <?php
 require("../config.php");
+require("../util.php");
 
-if ( ! empty($_FILES) )
+$mediaStoreFolder = FS_PATH."/uploads/uploaded_files/";
+
+$deviceid = isset($_GET['deviceID']) ? $_GET['deviceID'] : false;
+$deviceid or Util::printError("Device ID is missing", "400 Device id is missing");
+
+header('Server: Apache-Coyote/1.1');
+header('Content-Type: application/xml;charset=UTF-8');
+header( "Date: ".date('r'));
+header('Content-Length: 1000000');
+header('X-OpenRosa-Version: 1.0');
+header('X-OpenRosa-Accept-Content-Length: 1048576000');
+
+$filearray = array();
+if( $_SERVER['REQUEST_METHOD'] === "HEAD" )
 {
-	header('Server: Apache-Coyote/1.1');
-	header('Content-Type: application/xml;charset=UTF-8');
-	header( "Date: ".date('r'));
-	header('Content-Length: 1000000');
-	header('X-OpenRosa-Version: 1.0');
-	header('X-OpenRosa-Accept-Content-Length: 1048576000');
-
-	foreach( $_FILES as $file)
-	{
-		$file_name = 'uploads/uploaded_files/'. $file['name'];
-		move_uploaded_file( $file['tmp_name'],  $file_name);
-
-		if(substr(strrchr($file_name, '.'), 1) == 'xml')
-		{
-			$postFields['xml_submission_file'] ='@'.$file_name;
-		}
-		else
-		{
-			$postFields['datafile'.$i]='@'.$file_name.';type='. $file['type']; 
-		}				
-	}
-	file_put_contents('uploads/uploaded_files/submission.json', json_encode($_POST) );
-
-	http_response_code(201);
-    echo '<OpenRosaResponse xmlns="http://openrosa.org/http/response">
-    	<message nature="submit_success">Thanks</message>
-    </OpenRosaResponse> ';
-    exit();
+    http_response_code(204);
 }
-else
+elseif( $_SERVER['REQUEST_METHOD'] === "POST" )
 {
-	// header('Content-Type: text/xml; charset=utf-8');
-	// header('X-OpenRosa-Version:1.0');
-	
-	if ( empty( $_SERVER['PHP_AUTH_DIGEST']) )
-    { 
-    	// before credentials
-        http_response_code( 401 );
-        header("HTTP/1.1 401 Unauthorized");
-        header('WWW-Authenticate: Digest realm="'. $realm .'",qop="auth",nonce="'.uniqid().'",opaque="'. md5($realm) .'"');
-        header('"HTTP_X_OPENROSA_VERSION":"1.0"');
-        header('X-OpenRosa-Accept-Content-Length: 2000000');
-        header('Content-Length: 0');
-    } 
-    else 
-    { // after credentials
-    	header("Server: Apache-Coyote/1.1");
-		header("X-OpenRosa-Version: 1.0");
-		header("X-OpenRosa-Accept-Content-Length: 1048576000");
-		header( "Date: ".date('r'));
-		
-		$data = http_digest_parse($_SERVER['PHP_AUTH_DIGEST']);
-		if (! $data || ! isset($users[ $data['username'] ]))
-			die('Wrong Credentials!');
+    http_response_code(201);
+    $tmpname = $_FILES['xml_submission_file']['tmp_name'];
+    $name = $_FILES['xml_submission_file']['name'];
 
-		if ( ! check_user_pass( $data, array('admin' => 'mypass', 'guest' => 'guest')) )
+    file_put_contents($mediaStoreFolder .'headers.txt', "Temp name : ".$tmpname."\n", FILE_APPEND);
+    file_put_contents($mediaStoreFolder .'headers.txt', "Name : ".$name."\n", FILE_APPEND);
+    libxml_use_internal_errors(true);
+
+    if( ! $file_exists($tmpname) )
+        Util::printError("XML file not found");
+
+    $xml = simplexml_load_file($tmpname);
+    if($xml === false)
+    {
+        $errormsgs= "";
+        foreach(libxml_get_errors() as $error)
         {
-		    http_response_code( 401 );
-            die();
+            $errormsgs.="\t".$error->message;
         }
 
-        http_response_code(201);
-        echo '<OpenRosaResponse xmlns="http://openrosa.org/http/response">
-            <message nature="submit_success">Thanks</message>
-        </OpenRosaResponse> ';
-
-        header("Location:". site_url('submission/index.php'), true, 204);
-        
+        file_put_contents($mediaStoreFolder. 'headers.txt', "XML parse errors: {$errormsgs}.\n", FILE_APPEND);
+        Util::printError("Unable to parse ODK XML file.\n {$errormsgs}", "400 XML error");
     }
+
+    $instanceName = $xml->meta->instanceName or Util::printError("Unable to parse ODK XML file", "400 XML parse failed");
+    file_put_contents($mediaStoreFolder. 'headers.txt', "\n\nInstance name: {$instanceName} \n", FILE_APPEND);
+    file_put_contents($mediaStoreFolder. 'headers.txt', "\n".$xml->asXML()."\n", FILE_APPEND);
+
+    foreach( $_FILES as $file)
+    {
+        $arraycontents = print_r($file, true);
+        file_put_contents($mediaStoreFolder. 'headers.txt', "$arraycontents\n", FILE_APPEND);
+        file_put_contents($mediaStoreFolder. 'headers.txt', "Copying file: ".$file['name']." to temp folder\n", FILE_APPEND);
+
+        if(endsWith($file['name'], "xml"))
+            continue;
+
+        switch($file['error'])
+        {
+            case UPLOAD_ERR_OK:
+                    // upload is fine
+                    printError("The uploaded the file", "hooollah !");
+                break;
+
+            case UPLOAD_ERR_INI_SIZE:
+                    printError("The uploaded file exceeds the upload_max_filesize directive in php.ini", "413 Media file too large");
+                break;
+
+            case UPLOAD_ERR_FORM_SIZE:
+                $message = "The uploaded file exceeds the MAX_FILE_SIZE directive that was specified in the HTML form";
+                    printError($message, "413 Media file too large");
+                break;
+
+            case UPLOAD_ERR_PARTIAL:
+                $message = "The uploaded file was only partially uploaded";
+                printError($message, "400 Media file upload failure");
+                break;
+
+            case UPLOAD_ERR_NO_FILE:
+                $message = "No file was uploaded";
+                printError($message, "400 Media file upload failure");
+                break;
+
+            case UPLOAD_ERR_NO_TMP_DIR:
+                $message = "Missing a temporary folder";
+                printError($message, "500".$message);
+                break;
+
+            case UPLOAD_ERR_CANT_WRITE:
+                $message = "Failed to write file to disk";
+                printError($message, "500".$message);
+                break;
+
+            case UPLOAD_ERR_EXTENSION:
+                $message = "File upload stopped by extension";
+                printError($message, "500".$message);
+                break;
+
+            default:
+                $message = "Unknown upload error";
+                printError($message, "500". $message);
+                break;
+        }
+
+        move_uploaded_file( $file['tmp_name'], $mediastorefolder.$file['name']) or printError("Failed to copy media file", "400 Bad request");
+        $currentname = $file['tmp_name'];
+        $storedname = $mediaStoreFolder.$file['name'];
+        file_put_contents($mediaStoreFolder.'headers.txt', "Current filename : ".$currentname."\n", FILE_APPEND);
+        file_put_contents($mediaStoreFolder.'headers.txt', "Stored filename : ".$storedname."\n", FILE_APPEND);
+
+        // Fail if media file already exists
+        if (file_exists($storedname))
+        {
+            printError("Failed to copy media file", "500 Media file already exists");
+        }
+        move_uploaded_file($currentname, $storedname) or printError("Failed to copy media file", "500 Media file copy fail");
+        array_push($filearray, $storedname);
+
+        file_put_contents("$mediaStoreFolder.submission.json", $xml->asXML());
+    }
+    echo util::printResponse('Thanks');
+    exit();
+    // writeInstanceToDB($instanceName, $xml->asXML(), $filearray);
 }
+
